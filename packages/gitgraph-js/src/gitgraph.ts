@@ -555,8 +555,8 @@ function createGitgraph(
 
   function appendTooltipToGraph(commit: Commit): void {
     if (!svg.firstChild) return;
-    if (gitgraph.isVertical && gitgraph.mode !== Mode.Compact) return;
-    if (gitgraph.isVertical && !commit.style.hasTooltipInCompactMode) return;
+    // if (gitgraph.isVertical && gitgraph.mode !== Mode.Compact) return;
+    // if (gitgraph.isVertical && !commit.style.hasTooltipInCompactMode) return;
 
     const tooltip = commit.renderTooltip
       ? commit.renderTooltip(commit)
